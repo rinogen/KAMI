@@ -48,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Judul" />
 
     <EditText
+        android:fontFamily="@font/poppins_bold"
         android:id="@+id/text_nama"
         android:paddingLeft="10dp"
         android:layout_width="match_parent"
@@ -69,11 +70,13 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
+
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+
         android:id="@+id/toggleSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -86,8 +89,6 @@
         custom:textToggleRight="Wanita"
         custom:toggleWidth="150dp" />
 
-
-    
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
