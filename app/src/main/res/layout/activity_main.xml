@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="@+id/Judul" />
 
     <TextView
-        android:id="@+id/text_nama"
+        android:id="@+id/judulnama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -47,24 +47,24 @@
         app:layout_constraintTop_toBottomOf="@+id/Judul" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:id="@+id/text_nama"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_edit_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_nama" />
+        app:layout_constraintTop_toBottomOf="@+id/judulnama" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Gender"
         android:textColor="@color/WarnaTiga"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/text_nama"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -120,8 +120,8 @@
         app:min_value="100"
         app:selection_color="#A0FF3040"
         app:show_bars="true"
-        app:show_controls="false"
-        app:show_fast_controls="false"
+        app:show_controls="true"
+        app:show_fast_controls="true"
         app:show_highlight="true"
         app:show_text="true"
         app:text_color="@color/WarnaTiga"
@@ -161,8 +161,8 @@
         app:min_value="0"
         app:selection_color="#A0FF3040"
         app:show_bars="true"
-        app:show_controls="false"
-        app:show_fast_controls="false"
+        app:show_controls="true"
+        app:show_fast_controls="true"
         app:show_highlight="true"
         app:show_text="true"
         app:text_color="@color/WarnaTiga"
