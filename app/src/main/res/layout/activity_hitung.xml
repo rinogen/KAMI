@@ -4,33 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HasilKalkulasi"
-    android:layout_marginRight="16dp"
     android:layout_marginLeft="16dp"
     android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
     android:layout_marginBottom="16dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".HasilKalkulasi">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Hasil Perhitungan"
-        android:textColor="@color/WarnaTiga"
         android:fontFamily="@font/poppins_bold"
-        android:textSize="24sp"
-        android:textAlignment="center" />
-
+        android:text="Hasil Perhitungan"
+        android:textAlignment="center"
+        android:textColor="@color/WarnaTiga"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text_view_BMI"
         android:layout_width="140dp"
         android:layout_height="53dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:background="@drawable/txtview_ronded"
         android:fontFamily="@font/poppins_bold"
         android:text="22.9"
-        android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40sp" />
@@ -40,54 +39,57 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Badan kamu berada dalam kondisi ideal "
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_semibold"
-        android:textSize="18sp"
-        android:textColor="@color/WarnaDua"
+        android:text="Badan kamu berada dalam kondisi ideal "
         android:textAlignment="center"
-        android:layout_marginTop="20dp"/>
+        android:textColor="@color/WarnaDua"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/text_view_hasil"
-        android:layout_marginTop="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="IDEAL"
-        android:textSize="48sp"
-        android:textColor="@color/WarnaDua"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_bold"
-        android:textAlignment="center"/>
+        android:text="IDEAL"
+        android:textAlignment="center"
+        android:textColor="@color/WarnaDua"
+        android:textSize="48sp" />
 
     <ImageView
         android:id="@+id/imgIlustrasiIdeal"
-        android:layout_marginTop="12dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
 
 
     <Button
+        android:id="@+id/btn_analisis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_rounded"
         android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Analisis IMT"
+        android:textSize="18sp"
         app:backgroundTint="@color/WarnaTiga"
-        app:iconTint="#FFFFFF"
-        android:layout_marginTop="12dp"
-        android:textSize="18sp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Analisis IMT" />
+        app:iconTint="#FFFFFF" />
 
     <Button
+        android:id="@+id/btn_tips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_rounded"
         android:layout_gravity="center"
-        app:backgroundTint="@color/WarnaDua"
         android:layout_marginTop="20dp"
-        app:iconTint="#FFFFFF"
-        android:textSize="18sp"
+        android:background="@drawable/btn_rounded"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Lihat Tips Kesehatan" />
+        android:text="Lihat Tips Kesehatan"
+        android:textSize="18sp"
+        app:backgroundTint="@color/WarnaDua"
+        app:iconTint="#FFFFFF" />
 </LinearLayout>

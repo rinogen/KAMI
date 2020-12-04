@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalisisImt"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Analisis IMT"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/WarnaTiga"/>
+
+    <TextView
+        android:text="Berat badan Anda bisa dikatakan ideal jika angka BMI Anda berada antara angka 18,5 sampai 25. "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_width="309dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="@color/WarnaDua"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ilustrasi_analisis_imt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded"
+        android:layout_gravity="center"
+        app:backgroundTint="@color/WarnaTiga"
+        app:iconTint="#FFFFFF"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Menu Utama" />
+
+</LinearLayout>
