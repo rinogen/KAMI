@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipsKesehatan"
+    android:gravity="center_horizontal"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/txt_tips"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips Kesehatan"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/WarnaTiga"
+        android:textSize="24sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tips"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_tips_kesehatan">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_bckmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Menu Utama"
+        android:textSize="18sp"
+        app:backgroundTint="@color/WarnaTiga"
+        app:iconTint="#FFFFFF" />
+
+</RelativeLayout>
