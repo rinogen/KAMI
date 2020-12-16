@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kami">
 
-    <permission android:name="com.example.kami.READ_DATABASE" android:protectionLevel="normal"/>
-    <permission android:name="com.example.kami.WRITE_DATABASE" android:protectionLevel="normal"/>
+    <permission
+        android:name="com.example.kami.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.kami.WRITE_DATABASE"
+        android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -13,16 +16,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".BacaArtikel"></activity>
 
         <provider
-            android:name="com.example.kami.database.DatabaseProvider"
+            android:name=".database.DatabaseProvider"
             android:authorities="com.example.kami"
             android:enabled="true"
             android:exported="true"
             android:readPermission="com.example.kami.READ_DATABASE"
-            android:writePermission="com.example.kami.WRITE_DATABASE"/>
+            android:writePermission="com.example.kami.WRITE_DATABASE" />
 
-        <activity android:name=".TipsKesehatan"></activity>
+        <activity android:name=".TipsKesehatan" />
         <activity android:name=".Riwayat" />
         <activity android:name=".AnalisisImt" />
         <activity android:name=".HasilKalkulasi" />

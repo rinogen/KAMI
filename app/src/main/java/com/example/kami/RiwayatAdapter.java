@@ -38,6 +38,7 @@ public class RiwayatAdapter extends  RecyclerView.Adapter<RiwayatAdapter.ViewHol
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         RiwayatData data=values.get(position);
+        holder.namaText.setText(data.getItemNama());
         holder.dateText.setText(data.getItemTanggal());
         holder.hasilText.setText(data.getItemHasil());
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
@@ -73,13 +74,15 @@ public class RiwayatAdapter extends  RecyclerView.Adapter<RiwayatAdapter.ViewHol
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
+        TextView namaText;
         TextView dateText;
         TextView hasilText;
 
         public ViewHolder (View view){
             super (view);
-            dateText = view.findViewById(R.id.tgl_text);
-            hasilText = view.findViewById(R.id.hasil_text);
+            namaText = view.findViewById(R.id.nama_txt);
+            dateText = view.findViewById(R.id.tgl_txt);
+            hasilText = view.findViewById(R.id.hasil_txt);
 
         }
     }

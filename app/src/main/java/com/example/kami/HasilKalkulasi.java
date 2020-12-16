@@ -55,7 +55,6 @@ public class HasilKalkulasi extends AppCompatActivity {
         ket = intent.getStringExtra("EXTRA_KET");
         isIdeal = intent.getStringExtra("EXTRA_IDEAL");
 
-        Log.d(TAG, "onCreate: "+ isIdeal);
         if (isIdeal.equals("ideal")){
             btnAnalisis.setVisibility(View.INVISIBLE);
             Glide.with(this)

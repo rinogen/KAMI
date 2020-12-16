@@ -7,7 +7,6 @@ import android.provider.BaseColumns;
 // Mempermudah akses nama tabel dan nama kolom di dalam database kita
 public class DatabaseContract {
     public static String TABLE_NAME = "riwayat";
-
     public static final String AUTHORITY = "com.example.kami";
     private static final String SCHEME = "content";
 
@@ -15,6 +14,7 @@ public class DatabaseContract {
     // karena kolom id sudah ada secara otomatis di dalam kelas BaseColumns
     // Pemanggilan id menggunakan identifier _ID
     public static final class RiwayatColumns implements BaseColumns{
+        public static String NAMA = "nama";
         public static String BMI = "bmi";
         public static String DATE = "date";
 

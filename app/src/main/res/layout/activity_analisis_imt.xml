@@ -45,7 +45,7 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/txt_analisis"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/ilustrasi_analisis_imt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

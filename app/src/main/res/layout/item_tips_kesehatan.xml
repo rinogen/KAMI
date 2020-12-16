@@ -15,48 +15,50 @@
         android:padding="16dp">
 
         <ImageView
-            android:id="@+id/logo_gambar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/logo_berita"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="16dp" />
 
         <TextView
-            android:id="@+id/tgl_text"
+            android:id="@+id/tgl_berita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="16dp" />
 
         <TextView
-            android:layout_marginTop="10dp"
-            android:id="@+id/judul_text"
+            android:layout_marginTop="20dp"
+            android:id="@+id/judul_berita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textColor="@color/WarnaTiga"
+            android:textSize="22sp"
             android:fontFamily="@font/poppins_semibold"
-            app:layout_constraintTop_toBottomOf="@+id/tgl_text"
+            app:layout_constraintTop_toBottomOf="@+id/tgl_berita"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:layout_marginTop="10dp"
-            android:id="@+id/deskripsi_text"
+            android:maxLines="3"
+            android:id="@+id/deskripsi_berita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/judul_text"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/judul_berita"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp" />
 
         <TextView
+            android:id="@+id/baca_berita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -66,7 +68,7 @@
             android:text="Baca Artikel"
             android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/deskripsi_text"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_berita"
             tools:ignore="MissingConstraints" />
 
 

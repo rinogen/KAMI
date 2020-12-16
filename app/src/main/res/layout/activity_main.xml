@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Judul" />
 
     <EditText
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/poppins_medium"
         android:id="@+id/text_nama"
         android:paddingLeft="10dp"
         android:layout_width="match_parent"
@@ -74,7 +74,7 @@
 
 
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
-        android:id="@+id/toggleSwitch"
+        android:id="@+id/toggle_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -100,7 +100,7 @@
         android:text="Tinggi"
         android:textColor="@color/WarnaTiga"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/toggleSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_gender"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp" />
 

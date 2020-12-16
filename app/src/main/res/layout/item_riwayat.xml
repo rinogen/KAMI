@@ -14,28 +14,39 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tgl_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
-            android:textColor="@color/WarnaTiga"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
 
+        //tanggal
         <TextView
-            android:id="@+id/hasil_text"
-            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/hasil_txt"
+            android:fontFamily="@font/poppins_light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@+id/tgl_text"
+            android:textSize="12sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp" />
 
+        //nama
+        <TextView
+            android:id="@+id/tgl_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/WarnaTiga"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/hasil_txt"
+            tools:ignore="MissingConstraints" />
 
+        //hasil
+        <TextView
+            android:id="@+id/nama_txt"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/WarnaDua"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tgl_txt"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

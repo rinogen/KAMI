@@ -18,17 +18,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import belka.us.androidtoggleswitch.widgets.ToggleSwitch;
 import me.angrybyte.numberpicker.listener.OnValueChangeListener;
 import me.angrybyte.numberpicker.view.ActualNumberPicker;
 
 import static com.example.kami.database.DatabaseContract.RiwayatColumns.BMI;
 import static com.example.kami.database.DatabaseContract.RiwayatColumns.CONTENT_URI;
 import static com.example.kami.database.DatabaseContract.RiwayatColumns.DATE;
+import static com.example.kami.database.DatabaseContract.RiwayatColumns.NAMA;
 
 public class MainActivity extends AppCompatActivity implements OnValueChangeListener {
     private static final String TAG = MainActivity.class.getSimpleName();
     private EditText editNama;
     private TextView btnRiwayat;
+    private ToggleSwitch tglGender;
     private ActualNumberPicker editTinggi;
     private ActualNumberPicker editBerat;
     private Button btnHitung;
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements OnValueChangeList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editNama=findViewById(R.id.text_nama);
+        tglGender= (ToggleSwitch) findViewById(R.id.toggle_gender);
         editTinggi=(ActualNumberPicker) findViewById(R.id.height_picker);
         editTinggi.setListener(this);
         editBerat=findViewById(R.id.weight_picker);
@@ -84,11 +88,11 @@ public class MainActivity extends AppCompatActivity implements OnValueChangeList
                 }
 
                 ContentValues values = new ContentValues();
+                values.put(NAMA, nama);
                 values.put(BMI, bmiFOrmat);
                 values.put(DATE, getCurrentDate());
 
                 getContentResolver().insert(CONTENT_URI, values);
-                Log.d(TAG, "onCreate: "+ isIdeal);
                 intent.putExtra("EXTRA_IDEAL", isIdeal);
                 intent.putExtra("EXTRA_BMI", bmiFOrmat);
                 intent.putExtra("EXTRA_HASIL",hasil);

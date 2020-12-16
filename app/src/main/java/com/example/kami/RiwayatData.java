@@ -5,25 +5,20 @@ import android.os.Parcelable;
 
 public class RiwayatData implements Parcelable {
     private int id;
+    private String itemNama;
     private String itemTanggal;
     private String itemHasil;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
+    public RiwayatData(int id, String itemTanggal, String itemNama, String itemHasil) {
         this.id = id;
-    }
-
-    public RiwayatData(int id, String itemTanggal, String itemHasil) {
-        this.id = id;
+        this.itemNama = itemNama;
         this.itemTanggal = itemTanggal;
         this.itemHasil = itemHasil;
     }
 
     protected RiwayatData(Parcel in) {
         id = in.readInt();
+        itemNama=in.readString();
         itemTanggal = in.readString();
         itemHasil = in.readString();
     }
@@ -32,6 +27,7 @@ public class RiwayatData implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(id);
+        dest.writeString(itemNama);
         dest.writeString(itemTanggal);
         dest.writeString(itemHasil);
     }
@@ -52,6 +48,22 @@ public class RiwayatData implements Parcelable {
             return new RiwayatData[size];
         }
     };
+
+    public String getItemNama() {
+        return itemNama;
+    }
+
+    public void setItemNama(String itemNama) {
+        this.itemNama = itemNama;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getItemTanggal() {
         return itemTanggal;

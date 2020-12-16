@@ -26,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_riwayat"
         android:layout_marginTop="20dp"
-        tools:listitem="@layout/item_riwayat"/>
+        tools:listitem="@layout/item_riwayat">
+    </androidx.recyclerview.widget.RecyclerView>
 
     <Button
         android:layout_centerHorizontal="true"
