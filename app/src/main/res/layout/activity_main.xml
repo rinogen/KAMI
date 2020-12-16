@@ -23,18 +23,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:clickable="true"
         android:id="@+id/riwayat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
         android:text="Riwayat"
         android:textColor="@color/WarnaDua"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/Judul"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Judul"
-        android:focusable="true" />
+        app:layout_constraintTop_toTopOf="@+id/Judul" />
 
     <TextView
         android:id="@+id/judulnama"
@@ -60,7 +58,6 @@
         app:layout_constraintTop_toBottomOf="@+id/judulnama" />
 
     <TextView
-        android:layout_marginTop="50dp"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,6 +68,8 @@
         app:layout_constraintTop_toBottomOf="@+id/text_nama"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
+
+
 
 
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
@@ -91,12 +90,11 @@
         custom:toggleWidth="150dp" />
 
     <TextView
-
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Tinggi"
         android:textColor="@color/WarnaTiga"
         android:textSize="18sp"
@@ -136,8 +134,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Berat"
         android:textColor="@color/WarnaTiga"
         android:textSize="18sp"
@@ -177,7 +175,7 @@
         android:id="@+id/button_kalkulasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/poppins_semibold"
         android:text="Kalkulasikan"
@@ -188,7 +186,7 @@
         app:layout_constraintCircleRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/weight_picker" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

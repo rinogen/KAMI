@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BacaArtikel"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.welcome.WelcomeActivity" />
+        <activity android:name=".BacaArtikel" />
 
         <provider
             android:name=".database.DatabaseProvider"
@@ -30,7 +32,7 @@
         <activity android:name=".Riwayat" />
         <activity android:name=".AnalisisImt" />
         <activity android:name=".HasilKalkulasi" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.splashscreen.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

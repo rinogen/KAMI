@@ -12,4 +12,19 @@
     <color name="WarnaSatu">#FFBB91</color>
     <color name="WarnaDua">#FF8E6E</color>
     <color name="WarnaTiga">#515070</color>
+
+    <array name="array_dot_active">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+        <item>@color/white</item>
+    </array>
+
 </resources>
