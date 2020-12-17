@@ -12,6 +12,6 @@
         android:textSize="40sp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Desain page 1" />
+        android:text="Desain page a" />
 
 </RelativeLayout>
