@@ -25,12 +25,14 @@ import com.example.kami.R;
 
 import org.jetbrains.annotations.NotNull;
 
+
 public class WelcomeActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private LinearLayout dotsLayout;
     private int[] layouts;
-    private Button btnSkip, btnNext;
+    private Button btnMulai;
+    private TextView btnNext;
     private PrefManager prefManager;
 
     @SuppressLint("ObsoleteSdkInt")
@@ -54,8 +56,9 @@ public class WelcomeActivity extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
-        btnSkip = (Button) findViewById(R.id.btn_skip);
-        btnNext = (Button) findViewById(R.id.btn_next);
+        btnMulai = (Button) findViewById(R.id.btn_mulai);
+        btnMulai.setVisibility(View.INVISIBLE);
+        btnNext = (TextView) findViewById(R.id.btn_next);
 
         // layout xml slide 1 sampai 4
         // add few more layouts if you want
@@ -74,7 +77,7 @@ public class WelcomeActivity extends AppCompatActivity {
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
-        btnSkip.setOnClickListener(new View.OnClickListener() {
+        btnMulai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 launchHomeScreen();
@@ -107,10 +110,8 @@ public class WelcomeActivity extends AppCompatActivity {
         for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226;"));
-            dots[i].setTextSize(35);
+            dots[i].setTextSize(70);
             dots[i].setTextColor(colorsInactive[currentPage]);
-            btnNext.setTextColor(colorsInactive[currentPage]);
-            btnSkip.setTextColor(colorsInactive[currentPage]);
             dotsLayout.addView(dots[i]);
         }
 
@@ -137,12 +138,12 @@ public class WelcomeActivity extends AppCompatActivity {
             // mengubah button lanjut 'NEXT' / 'GOT IT'
             if (position == layouts.length - 1) {
                 // last page. make button text to GOT IT
-                btnNext.setText(getString(R.string.start));
-                btnSkip.setVisibility(View.GONE);
+                btnNext.setVisibility(View.INVISIBLE);
+                btnMulai.setVisibility(View.VISIBLE);
             } else {
                 // still pages are left
-                btnNext.setText(getString(R.string.next));
-                btnSkip.setVisibility(View.VISIBLE);
+                btnNext.setVisibility(View.VISIBLE);
+                btnMulai.setVisibility(View.INVISIBLE);
             }
         }
 
@@ -170,9 +171,9 @@ public class WelcomeActivity extends AppCompatActivity {
         public MyViewPagerAdapter() {
         }
 
-        @NotNull
+
         @Override
-        public Object instantiateItem(@NotNull ViewGroup container, int position) {
+        public Object instantiateItem( ViewGroup container, int position) {
             LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             View view = layoutInflater.inflate(layouts[position], container, false);
@@ -187,12 +188,12 @@ public class WelcomeActivity extends AppCompatActivity {
         }
 
         @Override
-        public boolean isViewFromObject(@NotNull View view, @NotNull Object obj) {
+        public boolean isViewFromObject(View view, Object obj) {
             return view == obj;
         }
 
         @Override
-        public void destroyItem(ViewGroup container, int position, @NotNull Object object) {
+        public void destroyItem(ViewGroup container, int position, Object object) {
             View view = (View) object;
             container.removeView(view);
         }

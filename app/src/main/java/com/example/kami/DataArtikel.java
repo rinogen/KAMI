@@ -6,11 +6,11 @@ import java.util.ArrayList;
 public class DataArtikel {
 
     private static final int[] logoBerita = {
-            R.drawable.ilustrasi_ideal,
-            R.drawable.ilustrasi_belumideal_kurus,
-            R.drawable.ilustrasi_belumideal_gendut,
-            R.drawable.ilustrasi_ideal,
-            R.drawable.ilustrasi_belumideal_kurus
+            R.drawable.artikel_image_halodoc,
+            R.drawable.artikel_image_halodoc,
+            R.drawable.artikel_image_alodokter,
+            R.drawable.artikel_image_sehatq,
+            R.drawable.artikel_image_kompas
     };
 
     private static final String[] tanggalBerita = {

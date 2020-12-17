@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".ui.welcome.WelcomeActivity">
 
     <androidx.viewpager.widget.ViewPager
@@ -14,37 +15,38 @@
     <LinearLayout
         android:id="@+id/layoutDots"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="18dp"
-        android:gravity="center"
         android:orientation="horizontal" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:alpha=".5"
-        android:layout_above="@id/layoutDots"
-        android:background="@android:color/white" />
 
-    <Button
+    <TextView
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
         android:background="@null"
-        android:text="NEXT"
-        android:textColor="@color/white" />
+        android:clickable="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Lewati"
+        android:textColor="@color/WarnaTiga"
+        android:textSize="22sp" />
 
     <Button
-        android:id="@+id/btn_skip"
+        android:id="@+id/btn_mulai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
         android:background="@null"
-        android:text="SKIP"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Mulai Sekarang"
         android:textColor="@color/white" />
+
 
 </RelativeLayout>

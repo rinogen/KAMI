@@ -3,15 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+
     tools:context=".ui.welcome.intro.FragmentIntroa">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/onboard_satu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/onboard_satu"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/txt_judul"
+        android:layout_below="@+id/onboard_satu"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/WarnaDua"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Selamat Datang" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="40sp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Desain page a" />
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_judul"
+        android:textSize="18sp"
+        android:textColor="@color/WarnaLima"
+        android:fontFamily="@font/poppins_light"
+        android:text="Temukan berat badan idealmu dengan Kalkulator BMI"/>
+
 
 </RelativeLayout>

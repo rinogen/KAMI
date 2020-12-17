@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/logo_berita"
-            android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
             android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"

@@ -29,7 +29,7 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Riwayat"
         android:textColor="@color/WarnaDua"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/Judul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Judul" />
@@ -58,6 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/judulnama" />
 
     <TextView
+        android:layout_marginTop="60dp"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,9 +69,6 @@
         app:layout_constraintTop_toBottomOf="@+id/text_nama"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
-
-
-
 
     <belka.us.androidtoggleswitch.widgets.ToggleSwitch
         android:id="@+id/toggle_gender"
@@ -93,7 +91,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Tinggi"
         android:textColor="@color/WarnaTiga"
@@ -118,8 +116,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:max_value="230"
-        app:min_value="0"
+        app:max_value="250"
+        app:min_value="50"
         app:selection_color="#A0FF3040"
         app:show_bars="true"
         app:show_controls="true"
@@ -134,7 +132,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Berat"
         android:textColor="@color/WarnaTiga"
@@ -159,8 +157,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:max_value="200"
-        app:min_value="0"
+        app:max_value="250"
+        app:min_value="50"
         app:selection_color="#A0FF3040"
         app:show_bars="true"
         app:show_controls="true"

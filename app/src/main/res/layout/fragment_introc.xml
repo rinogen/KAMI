@@ -3,14 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="16dp"
     tools:context=".ui.welcome.intro.FragmentIntroc">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/onboard_tiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/onboard_tiga"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/txt_judul"
+        android:layout_below="@+id/onboard_tiga"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@color/WarnaDua"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Informasi Kesehatan" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="40sp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Desain page c" />
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_judul"
+        android:textSize="18sp"
+        android:textColor="@color/WarnaLima"
+        android:fontFamily="@font/poppins_light"
+        android:text="Cari tahu informasi yang akan membantumu untuk meraih berat badan yang ideal"/>
 
 </RelativeLayout>
