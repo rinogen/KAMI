@@ -32,6 +32,7 @@
         <activity android:name=".Riwayat" />
         <activity android:name=".AnalisisImt" />
         <activity android:name=".HasilKalkulasi" />
+        //
         <activity android:name=".ui.splashscreen.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
