@@ -158,7 +158,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:max_value="250"
-        app:min_value="50"
+        app:min_value="20"
         app:selection_color="#A0FF3040"
         app:show_bars="true"
         app:show_controls="true"
@@ -185,6 +185,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weight_picker" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
