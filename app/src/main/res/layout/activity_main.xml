@@ -177,6 +177,7 @@
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/poppins_semibold"
         android:text="Kalkulasikan"
+        android:layout_marginBottom="12dp"
         android:textSize="18sp"
         app:backgroundTint="@color/WarnaDua"
         app:iconTint="#FFFFFF"
